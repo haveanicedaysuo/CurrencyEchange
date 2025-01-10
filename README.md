@@ -237,8 +237,8 @@ specified in the query address. Example of response:
 }
 ```
 ### Для запуска склонируйте репозиторий
-#### 'git clone https://github.com/ваш-репозиторий'
-#### 'cd currency-exchange'
+#### 'git clone https://github.com/haveanicedaysuo/CurrencyEchangeй'
+#### 'cd CurrencyEchangeй'
 
 ### Соберите проект с помощью Maven:
 mvn package
