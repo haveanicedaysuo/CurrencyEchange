@@ -1,0 +1,27 @@
+
+### get all currencies
+GET http://localhost:{{port}}/api/currencies
+### get currency by code USD
+GET http://localhost:{{port}}/api/currency/uss
+### get incorrect currency by code USD
+GET http://localhost:{{port}}/api/currency/uah
+### добавление валюты. Поля формы - name, code, sign.
+POST http://localhost:{{port}}/api/currencies?name=Grivna&code=UAH&sign=₴
+### get all exchangeRates
+GET http://localhost:{{port}}/api/exchangeRates
+### get  exchangeRate
+GET http://localhost:{{port}}/api/exchangeRate/usdrub
+
+### add new exchangeRates Поля формы - baseCurrencyCode, targetCurrencyCode, rate
+POST http://localhost:{{port}}/api/exchangeRates?baseCurrencyCode=USD&targetCurrencyCode=RUB&rate=90
+
+### update ExchangeRate
+PATCH http://localhost:{{port}}/api/exchangeRate/Usdrub?rate=777
+###
+GET http://localhost:{{port}}/api/exchange?from=USD&to=RUB&amount=1
+###
+GET http://localhost:{{port}}/api/exchange?from=RUB&to=USD&amount=1
+###
+GET http://localhost:{{port}}/api/exchange?from=EUR&to=RUB&amount=1
+###
+GET http://localhost:{{port}}/api/exchange?from=usd&to=rub&amount=5200
